@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display:flex ;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-nav{
+    width: 40px;
+    height: auto;
+}
