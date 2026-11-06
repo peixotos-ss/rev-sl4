@@ -7,15 +7,43 @@ nav{
     display:flex ;
     justify-content: center;
     gap: 20px;
+    box-shadow: 0px 3px 13px #00000077;
+    padding: 10px;
 }
 
 .nav-item{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+    transition: all 200ms ease-in-out;
+}
+.nav-item:hover{
+    opacity: 1;
 }
 
 .icone-nav{
-    width: 40px;
+    width: 30px;
     height: auto;
+}
+
+.nav-item p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.s1{
+    background-image: url(../assets/images/backs.jpg);
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 3px 13px #000000af;
+}
+
+.s2{
+    height: 100vh;
 }
