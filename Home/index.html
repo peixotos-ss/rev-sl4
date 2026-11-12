@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site institucional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a class="nav-item" href="../Home">
+            <img class="icone-nav" src="../assets/icons/botao-home.png" alt="Home">
+            <p>Home</p>
+        </a>
+         <a class="nav-item" href="../Institution">
+            <img class="icone-nav" src="../assets/icons/botao-home.png" alt="Home">
+            <p>Instituição</p>
+        </a>
+         <a class="nav-item" href="../Products">
+            <img class="icone-nav" src="../assets/icons/botao-home.png" alt="Home">
+            <p>
+                Produtos
+            </p>
+        </a>
+         <a class="nav-item" href="../Contact">
+            <img class="icone-nav" src="../assets/icons/botao-home.png" alt="Home">
+            <p>Contato</p>
+        </a>
+    </nav>
+
+    <div id="wrap-open" class="wrap-open" onclick="abrir()">
+        <img src="../assets/icons/menu.png" alt="menu">
+    </div>
+
+    <div id="menu-mobile">
+        <img onclick="fechar()" src="../assets/icons/fechar.png" alt="Fechar">
+        <a href="../Home/">Home</a>
+        <a href="../Institution/">Instituição</a>
+        <a href="../Products/">Produtos</a>
+        <a href="../Contact/">Contato</a>   
+    </div>
+
+    <section class="s1">
+        <div class="wrap-divs">
+            <div class="title-div">
+                <h1>Título qualquer da página</h1>
+            </div>
+            <div class="wrap-btns">
+                <button onclick="irParaContato()">Contato</button>
+                <button onclick="praBaixo()">Pra baixo</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="s2">
+<div class="card">
+    <div class="wrap-img">
+        <img src="../assets/images/t1.jpg" alt="">
+    </div>
+    <div class="wrap-text">
+        <h2>titulo02</h2>
+        <p>jjjjjjjjjjjjjj</p>
+    </div>
+</div>
+<div class="card">
+    <div class="card">
+    <div class="wrap-img">
+        <img src="../assets/images/t2.jpg" alt="">
+    </div>
+    <div class="wrap-text">
+        <h2>titulo02</h2>
+        <p>jjjjjjjjjjjjjj</p>
+    </div>
+</div>
+</div>
+<div class="card">
+    <div class="card">
+    <div class="wrap-img">
+        <img src="../assets/images/t3.jpg" alt="">
+    </div>
+    <div class="wrap-text">
+        <h2>titulo02</h2>
+        <p>jjjjjjjjjjjjjj</p>
+    </div>
+</div>
+</div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
