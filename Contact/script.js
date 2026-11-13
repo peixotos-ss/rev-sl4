@@ -7,3 +7,8 @@ function fechar(){
     document.getElementById('wrap-open').style.display = "flex"
     document.getElementById('menu-mobile').style.display = "none"
 }
+function enviar(){
+    const none = document.getElementById('nome').value
+    const assunto = document.getElementById('assunto').value
+    
+}
