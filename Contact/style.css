@@ -1,9 +1,10 @@
-* {
+*{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-nav {
+nav{
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -13,27 +14,67 @@ nav {
     width: 100%;
     background-color: #ffffff;
 }
-section{
-    height: 100vh;
+
+.inicio{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+    transition: all 200ms ease-in-out;
 }
+
+.inicio p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inicio:hover{
+    opacity: 1;
+}
+
+.home{
+    width: 30px;
+    height: auto;
+}
+
+.wrap-open, .wrap-open img{
+    display: none;
+}
+
+#menu-mobile, #menu-mobile img{
+    display: none;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .formulario{
     border: 2px solid black;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 2px 12px #00000049;
+    position: relative;
 }
+
 .wrap-input{
     display: flex;
     flex-direction: column;
 }
+
 label{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     margin-top: 20px;
+    margin-bottom: -5px;
 }
+
 input{
     padding: 10px;
     outline: none;
@@ -41,6 +82,7 @@ input{
     border-bottom: 2px solid black;
     font-size: 16px;
 }
+
 button{
     padding: 10px;
     margin-top: 20px;
@@ -51,71 +93,55 @@ button{
     transition: all 200ms ease-in-out;
     font-size: 18px;
 }
+
 button:hover{
     cursor: pointer;
     color: white;
     background: black;
 }
 
-.nav-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: black;
-    gap: 8px;
-    opacity: 0.5;
-    transition: all 200ms ease-in-out;
+.formulario img{
+    width: 70px;
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+    transform: translate(-50%);
+    top: -50px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.313);
 }
 
-.nav-item:hover {
-    opacity: 1;
-}
-
-.icone-nav {
-    width: 30px;
-    height: auto;
-}
-
-.nav-item p {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.wrap-open, .wrap-open img {
-    display: none;
-}
-
-#menu-mobile, #menu-mobile img{
-    display: none;
-}
-
-@media (width <= 1000px) {
-    nav {
+@media (width <= 1000px){
+    nav{
         display: none;
     }
-    .wrap-open {
-        display: flex;
+
+    .wrap-open{
         background-color: #ffffff;
         opacity: 0.5;
         width: 50px;
         height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
         right: 10px;
         top: 10px;
-        align-items: center;
-        justify-content: center;
         border-radius: 5px;
         transition: all 200ms ease-in-out;
     }
+
     .wrap-open:hover{
-          opacity: 1;
-          cursor: pointer;
+        opacity: 1;
+        cursor: pointer;
     }
-    .wrap-open img {
+
+    .wrap-open img{
         display: flex;
         width: 35px;
     }
+
     #menu-mobile{
         display: none;
         align-items: center;
@@ -126,6 +152,7 @@ button:hover{
         height: 100vh;
         animation: deCima 1s ease-in-out;
     }
+
     #menu-mobile a{
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
@@ -148,13 +175,14 @@ button:hover{
         opacity: 0.5;
         transition: all 200ms ease-in-out;
     }
+
     #menu-mobile img:hover{
         cursor: pointer;
         opacity: 1;
     }
 }
 
-@keyframes deCima {
+@keyframes deCima{
     0%{
         transform: translateY(-100%);
         opacity: 0;
